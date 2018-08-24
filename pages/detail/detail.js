@@ -1,18 +1,34 @@
 // pages/detail/detail.js
+var wxparse = require('../../wxParse/wxParse.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    art:{},
+    content:'',
+    id:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this;
+    wx.request({
+      url: 'http://news-at.zhihu.com/api/4/news/'+options.id,
+      headers:{
+        'Content-Type':'application/json'
+      },
+      success:function(rsp){
+        console.log(rsp);
+        that.setData({
+          'art':rsp.data,
+          'content': wxparse.wxParse('content', 'html', rsp.data.body,that,0)
+        })
+      }
+    })
   },
 
   /**
