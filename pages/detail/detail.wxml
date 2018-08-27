@@ -1,6 +1,6 @@
 <!--pages/detail/detail.wxml-->
 <import src="../../wxParse/wxParse.wxml"/>
-<view>
+<view style='width:96%;margin:0 auto;'>
   <view class='art-header'>
     <image src='{{art.image}}' class='art-img'></image>
     <view class='art-title'>{{art.title}}</view>

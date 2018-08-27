@@ -96,6 +96,7 @@ view{
 .wxParse-img{
     /*background-color: #efefef;*/
     overflow: hidden;
+    margin: 10px 0;
 }
 
 .wxParse-blockquote {

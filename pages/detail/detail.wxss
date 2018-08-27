@@ -5,6 +5,7 @@
   height: 500rpx;
   color: #fff;
   position: relative;
+  margin-top: 15rpx;
 }
 
 .art-img{

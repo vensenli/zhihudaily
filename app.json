@@ -6,7 +6,28 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "资讯",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [{
+      "selectedIconPath": "",
+      "iconPath": "",
+      "pagePath": "pages/index/index",
+      "text": "资讯"
+    },{
+      "selectedIconPath": "",
+      "iconPath": "",
+      "pagePath": "pages/detail/detail",
+      "text": "精选"  
+    },{
+      "selectedIconPath": "",
+      "iconPath": "",
+      "pagePath": "pages/index/index",
+      "text": "我的"
+    }]
   }
 }
